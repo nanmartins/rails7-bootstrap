@@ -1,0 +1,22 @@
+<%# NAV-LINK %>
+
+<nav class="js-nav js-navDontShow" js-navDontShow>
+  <div class="nav-link-logo">
+    <%= link_to "/",  class: "nav-link-logo-link" do %>
+      <%= image_tag "logo2.png", class: "nav-logo-img" %>
+    <% end %>
+  </div>
+  <ul class="nav-list">
+    <li class="nav-list-links"><a href="/" class="nav-each-link">BLUSAS</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">CALÇAS</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">SAIAS</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">SHORTS</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">VESTIDOS</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">ACESSÓRIOS</a></li>
+  </ul>
+  <div class="nav-cart-container">
+    <%= link_to "/", class: "nav-cartbag-link" do %>
+      <%= image_tag "cartbag-icon.png", class: "nav-cartbag-img" %>
+      <% end %>
+  </div>
+</nav>

@@ -2,5 +2,7 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
+import "./custom/navLink"
+import "./custom/productslide"
 
-console.log("test");
+// console.log("test");
