@@ -4,5 +4,6 @@ import "./controllers"
 import * as bootstrap from "bootstrap"
 import "./custom/navLink"
 import "./custom/productslide"
+import "./custom/multiCarousel"
 
 // console.log("test");
