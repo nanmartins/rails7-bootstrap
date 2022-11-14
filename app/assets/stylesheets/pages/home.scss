@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// lewagon template
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 250px;
+}
+
+///////////////////////////
+.navbar {
+  background-color: aqua;
+}
+
+.cart-icon {
+  width: 65px;
+}
