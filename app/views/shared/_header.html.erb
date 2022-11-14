@@ -1,0 +1,27 @@
+<%# HEADER  %>
+
+<header class="header-container">
+  <%= link_to root_path, class: "header-logo" do %>
+    <%= image_tag "LOGOTIPO2.png" %>
+  <% end %>
+
+  <form class="search-bar-container" onsubmit="event.preventDefault();" role="search">
+    <label class="search-bar-label" for="search">Search for stuff</label>
+    <input class="search-bar-input" id="search" type="search" placeholder="Procurar..." autofocus required />
+    <button class="search-bar-btn" type="submit"><i class="fas fa-search search-lupa-icon"></i></button>
+  </form>
+
+  <div class="header-cart-container">
+    <%= link_to "/", class: "cartbag-link" do %>
+      <%= image_tag "cartbag-icon.png", class: "cartbag-img" %>
+      <% end %>
+  </div>
+</header>
+
+
+
+<%# DIVIDER %>
+
+<div class="divider-container">
+  <span class="nav-divider"></span>
+</div>
