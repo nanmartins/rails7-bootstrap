@@ -6,3 +6,4 @@ import "./custom/navLink"
 import "./custom/productslide"
 
 // console.log("test");
+Turbo.session.drive = false;
