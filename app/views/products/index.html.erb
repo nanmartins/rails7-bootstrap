@@ -1,0 +1,59 @@
+
+<ul>
+  <div class="card">
+    <% @products[1..3].each do |product| %>
+      <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%">
+      <h1><%= product.name %></h1>
+        <p class="price">R$<%= product.price %></p>
+        <p><%= product.description %></p>
+        <%= link_to "View more", "/products/#{product.id}" %>
+        <p><button link_to>Add to Cart</button></p>
+    <% end %>
+  </div>
+</ul>
+
+
+  <%# ADD .EACH FOR PRODUCT %>
+  <%# <% @products.each do |product| %>
+    <%# <li><%= product.address</li> %>
+    <%# <td><% if policy(product).show? %>
+              <%# <%= link_to "Show", product_path(product) %>
+        <%# <% end</td>  %>
+    <%# <td><% if policy(product).update? %>
+              <%# <%= link_to "Edit", edit_product_path(product) %>
+        <%# <% end</td> %>
+    <%# <td><% if policy(product).update? %>
+              <%# <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%# <% end</td> %>
+  <%# <% end %>
+
+
+
+
+<%# EXEMPLE 1 %>
+
+<!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="containerIndex">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
