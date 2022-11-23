@@ -6,8 +6,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%# Retirar %>
-    <%# /Retirar %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
@@ -19,6 +17,7 @@
   <%= render 'shared/header' %>
   <%= render 'shared/navlink' %>
   <%= render 'shared/homecarousel' %>
+  <%= render 'shared/productslides' %>
     <%= yield %>
   </body>
 </html>
