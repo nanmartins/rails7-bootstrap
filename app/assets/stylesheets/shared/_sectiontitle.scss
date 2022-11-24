@@ -1,0 +1,40 @@
+.sections-container {
+  display: grid;
+  place-items: center;
+}
+
+.sections-card {
+  width: 65vw;
+  // background-color: aquamarine;
+}
+
+.sections-title {
+  font-family: 'Tourney', cursive;
+  font-size: 144px;
+  font-weight: 900;
+  line-height: 9rem;
+  // color: #7c7c7c;
+  color: #d8a197;
+  // text-shadow: 3px 2px #b0b0b0;
+  padding: 0;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.sections-subtitle {
+  font-family: 'Tourney', cursive;
+  font-size: 144px;
+  font-weight: 200;
+  line-height: 9rem;
+  color: #bdbdbd;
+  // color: #d8a197;
+  // text-shadow: 3px 2px #b0b0b0;
+  padding: 0;
+  margin: 0 20px;
+  overflow: hidden;
+
+    &::after {
+      content: ".";
+      transform: rotate(45deg);
+    }
+}
