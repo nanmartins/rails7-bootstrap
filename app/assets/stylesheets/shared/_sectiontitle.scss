@@ -23,7 +23,7 @@
 .sections-subtitle {
   font-family: 'Tourney', cursive;
   font-size: 164px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 9rem;
   letter-spacing: 10px;
   color: #bdbdbd;
@@ -36,24 +36,24 @@
       height: 40px;
       width: 40px;
       display: inline-block;
-      margin: 0 0 10px 10px;
+      margin: 0 0 10px 0;
       background-image: linear-gradient(to right, #d8a197 , #f2d1cb);
       transform: rotate(45deg);
     }
 }
 
 .sections-paragraph {
-  font-size: 20px;
+  font-size: 22px;
   color: #bdbdbd;
   // text-shadow: 1px 1px rgb(157, 157, 157);
-  margin: 0 20px;
+  margin-left: 5px;
 
     &::before {
       content: ' ';
-      height: 10px;
-      width: 10px;
+      height: 15px;
+      width: 15px;
       display: inline-block;
-      margin: 0 10px;
+      margin-right: 10px;
       background-image: linear-gradient(to right, #d8a197 , #f0cbc4);
       transform: rotate(45deg);
     }
