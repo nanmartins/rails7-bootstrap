@@ -1,0 +1,20 @@
+.home-cards-carousel {
+  width: 79vw;
+  // height: 70vh;
+  margin: 0 auto;
+}
+
+
+.cards-carousel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators {
+  bottom: -42px;
+}
+
+.card {
+  width: calc(65vw/3);
+  height: 500px;
+}
