@@ -5,6 +5,7 @@ import "./controllers"
 import * as bootstrap from "bootstrap"
 import "./custom/navLink"
 import "./custom/productslide"
+import "./custom/titleSlide"
 
 
 // console.log("test");

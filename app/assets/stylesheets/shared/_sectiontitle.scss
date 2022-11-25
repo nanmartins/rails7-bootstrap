@@ -1,0 +1,76 @@
+.sections-container {
+  display: grid;
+  place-items: center;
+}
+
+.sections-card {
+  width: 65vw;
+  // background-color: aquamarine;
+}
+
+.sections-title {
+  font-family: 'Tourney', cursive;
+  font-size: 154px;
+  font-weight: 900;
+  line-height: 9rem;
+  letter-spacing: 10px;
+  color: #d8a197;
+  padding: 0;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.sections-subtitle {
+  font-family: 'Tourney', cursive;
+  font-size: 164px;
+  font-weight: 300;
+  line-height: 9rem;
+  letter-spacing: 10px;
+  color: #bdbdbd;
+  padding: 0;
+  margin: 0 20px;
+  overflow: hidden;
+
+    &::after {
+      content: ' ';
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      margin: 0 0 10px 0;
+      background-image: linear-gradient(to right, #d8a197 , #f2d1cb);
+      transform: rotate(45deg);
+    }
+}
+
+.sections-paragraph {
+  font-size: 22px;
+  color: #bdbdbd;
+  // text-shadow: 1px 1px rgb(157, 157, 157);
+  margin-left: 5px;
+
+    &::before {
+      content: ' ';
+      height: 15px;
+      width: 15px;
+      display: inline-block;
+      margin-right: 10px;
+      background-image: linear-gradient(to right, #d8a197 , #f0cbc4);
+      transform: rotate(45deg);
+    }
+}
+
+
+
+// animation
+
+.js-animation {
+  transform: translate3d(1500px, 0, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+.js-animation-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition: 2s;
+}

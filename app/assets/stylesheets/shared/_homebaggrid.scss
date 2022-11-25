@@ -1,0 +1,49 @@
+
+
+.container-home-grids {
+  width: 100vw;
+  height: 45vh;
+  // background-color: aqua;
+  display: grid;
+  place-items: center;
+}
+
+.home-grids-div {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-grids-img-card {
+  background-image: url("bag-img.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.home-grids-text-card {
+  background-image: url("pattern1.png");
+  height: 40vh;
+  border: 2px solid #C68F85;
+  border-radius: 0 10px 10px 0;
+  display: grid;
+  justify-items: flex-end;
+  opacity: 0.5;
+}
+
+.home-grids-text {
+  font-family: 'Tourney', cursive;
+  font-size: 64px;
+  padding-right: 10px;
+  color: #bdbdbd;
+  text-shadow: 1px 1px black;
+}
+
+.home-grids-parag {
+  align-self: flex-end;
+  text-align: end;
+  font-size: 30px;
+  color: #bdbdbd;
+  text-shadow: 1px 1px black;
+  margin-right: 5px;
+}
