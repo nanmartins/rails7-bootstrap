@@ -33,8 +33,10 @@
   margin: 0 20px;
   overflow: hidden;
 
-    &::after {
-      content: ".";
-      transform: rotate(45deg);
-    }
+    // &::after {
+    //   content: url("star-icon.png");
+    //   display: inline-block;
+    //   width: 10px;
+    //   // transform: rotate(45deg);
+    // }
 }
