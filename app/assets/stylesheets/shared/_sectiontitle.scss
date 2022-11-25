@@ -19,6 +19,7 @@
   padding: 0;
   margin: 0 20px;
   overflow: hidden;
+  // animation: rightToLeft 1.2s forwards;
 }
 
 .sections-subtitle {
@@ -32,6 +33,7 @@
   padding: 0;
   margin: 0 20px;
   overflow: hidden;
+  // animation: rightToLeft 1.5s forwards;
 
     // &::after {
     //   content: url("star-icon.png");
@@ -39,4 +41,31 @@
     //   width: 10px;
     //   // transform: rotate(45deg);
     // }
+}
+
+// animation
+
+@keyframes rightToLeft{
+  from {
+    opacity: 1;
+    transform: translate3d(1500px, 0, 0)
+  }
+  to {
+    opacity: 1;
+    // transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+.js-animation {
+  transform: translate3d(1500px, 0, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+.js-animation-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition: 2s;
 }

@@ -6,7 +6,7 @@ body, ul, li, dl, ol, html {
 
 .container-home-grids {
   width: 100vw;
-  height: 35vh;
+  height: 45vh;
   // background-color: aqua;
   display: grid;
   place-items: center;
@@ -22,11 +22,12 @@ body, ul, li, dl, ol, html {
   background-image: url("bag-img.png");
   background-size: cover;
   background-position: center;
+  border-radius: 10px 0 0 10px;
 }
 
 .home-grids-text-card {
   background-image: url("pattern1.png");
-  height: 30vh;
+  height: 40vh;
   border: 0.13rem solid #C68F85;
   border-radius: 0 10px 10px 0;
   display: grid;
@@ -36,9 +37,8 @@ body, ul, li, dl, ol, html {
 
 .home-grids-text {
   font-family: 'Tourney', cursive;
-  font-size: 54px;
+  font-size: 64px;
   padding-right: 10px;
   color: #bdbdbd;
   text-shadow: 1px 1px black;
-  opacity: 1 !important;
 }
