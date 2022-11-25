@@ -7,19 +7,38 @@ body, ul, li, dl, ol, html {
 .container-home-grids {
   width: 100vw;
   height: 35vh;
-  background-color: aqua;
+  // background-color: aqua;
   display: grid;
   place-items: center;
 }
 
 .home-grids-div {
-  background-color: brown;
   width: 65vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.home-grids-cards {
+.home-grids-img-card {
+  background-image: url("bag-img.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-grids-text-card {
+  background-image: url("pattern1.png");
   height: 30vh;
-  border: 1px solid black;
+  border: 0.13rem solid #C68F85;
+  border-radius: 0 10px 10px 0;
+  display: grid;
+  justify-items: end;
+  opacity: 0.5;
+}
+
+.home-grids-text {
+  font-family: 'Tourney', cursive;
+  font-size: 54px;
+  padding-right: 10px;
+  color: #bdbdbd;
+  text-shadow: 1px 1px black;
+  opacity: 1 !important;
 }
