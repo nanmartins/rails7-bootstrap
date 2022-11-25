@@ -4,41 +4,64 @@ body, ul, li, dl, ol, html {
   overflow-x: hidden;
 }
 
-.container-home-grids {
+
+.home-second-body {
+  height: 100vh;
   width: 100vw;
-  height: 45vh;
-  // background-color: aqua;
+  background-color: #C58E84;
   display: grid;
-  place-items: center;
+  // justify-items: center;
+  padding: 20px 0;
 }
 
-.home-grids-div {
+.home-second-body-title {
+  margin: 0 auto;
   width: 65vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  // background-color: aquamarine;
+  justify-content: flex-start;
 }
 
-.home-grids-img-card {
-  background-image: url("bag-img.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px 0 0 10px;
-}
-
-.home-grids-text-card {
-  background-image: url("pattern1.png");
-  height: 40vh;
-  border: 0.13rem solid #C68F85;
-  border-radius: 0 10px 10px 0;
-  display: grid;
-  justify-items: end;
-  opacity: 0.5;
-}
-
-.home-grids-text {
+.home-latest-title {
   font-family: 'Tourney', cursive;
-  font-size: 64px;
-  padding-right: 10px;
-  color: #bdbdbd;
-  text-shadow: 1px 1px black;
+  font-size: 136px;
+  line-height: 8rem;
+  // color: #bdbdbd;
+  color: white;
+  // text-shadow: 2px 2px white;
+  font-weight: 300;
+
+    &::after {
+      content: ' ';
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      margin: 0 0 10px 10px;
+      background-image: linear-gradient(to right, #f8d6cf , #f8baad);
+      transform: rotate(45deg);
+    }
 }
+
+.home-latest-paragraph {
+  font-size: 22px;
+  // color: white;
+  color: #cecece;
+  // text-shadow: 1px 1px white;
+
+    &::before {
+      content: ' ';
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      margin: 0 10px;
+      background-image: linear-gradient(to right, #f8d6cf , #f8baad);
+      transform: rotate(45deg);
+    }
+}
+
+// .home-latest-carousel {
+//   width: 65vw;
+//   background-color: white;
+//   height: 45vh;
+//   margin: 0 auto;
+//   border-radius: 10px;
+// }

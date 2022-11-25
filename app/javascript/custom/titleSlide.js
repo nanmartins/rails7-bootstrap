@@ -2,7 +2,7 @@
 
 function initTitleSlide() {
   const title = document.querySelectorAll('.js-animation');
-  const windowHeigh = window.innerHeight * 0.7;
+  const windowHeigh = window.innerHeight * 0.8;
 
   title.forEach((title) => {
     const titleTop = title.getBoundingClientRect().top;

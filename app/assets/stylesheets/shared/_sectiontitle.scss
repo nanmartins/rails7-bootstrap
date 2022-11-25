@@ -13,13 +13,11 @@
   font-size: 154px;
   font-weight: 900;
   line-height: 9rem;
-  // color: #7c7c7c;
+  letter-spacing: 10px;
   color: #d8a197;
-  // text-shadow: 3px 2px #b0b0b0;
   padding: 0;
   margin: 0 20px;
   overflow: hidden;
-  // animation: rightToLeft 1.2s forwards;
 }
 
 .sections-subtitle {
@@ -27,36 +25,43 @@
   font-size: 164px;
   font-weight: 200;
   line-height: 9rem;
+  letter-spacing: 10px;
   color: #bdbdbd;
-  // color: #d8a197;
-  // text-shadow: 3px 2px #b0b0b0;
   padding: 0;
   margin: 0 20px;
   overflow: hidden;
-  // animation: rightToLeft 1.5s forwards;
 
-    // &::after {
-    //   content: url("star-icon.png");
-    //   display: inline-block;
-    //   width: 10px;
-    //   // transform: rotate(45deg);
-    // }
+    &::after {
+      content: ' ';
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      margin: 0 0 10px 10px;
+      background-image: linear-gradient(to right, #d8a197 , #f2d1cb);
+      transform: rotate(45deg);
+    }
 }
+
+.sections-paragraph {
+  font-size: 20px;
+  color: #bdbdbd;
+  // text-shadow: 1px 1px rgb(157, 157, 157);
+  margin: 0 20px;
+
+    &::before {
+      content: ' ';
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      margin: 0 10px;
+      background-image: linear-gradient(to right, #d8a197 , #f0cbc4);
+      transform: rotate(45deg);
+    }
+}
+
+
 
 // animation
-
-@keyframes rightToLeft{
-  from {
-    opacity: 1;
-    transform: translate3d(1500px, 0, 0)
-  }
-  to {
-    opacity: 1;
-    // transform: translate3d(0, 0, 0);
-  }
-}
-
-
 
 .js-animation {
   transform: translate3d(1500px, 0, 0);
