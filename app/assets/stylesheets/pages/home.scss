@@ -6,7 +6,7 @@ body, ul, li, dl, ol, html {
 
 
 .home-second-body {
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   background-color: #C58E84;
   padding: 20px 0;
@@ -35,7 +35,7 @@ body, ul, li, dl, ol, html {
       width: 40px;
       display: inline-block;
       margin: 0 0 10px 10px;
-      background-image: linear-gradient(to right, #f8d6cf , #f8baad);
+      background-image: linear-gradient(to right, #f8d6cf , #dca59a);
       transform: rotate(45deg);
     }
 }
@@ -53,15 +53,39 @@ body, ul, li, dl, ol, html {
       width: 15px;
       display: inline-block;
       margin-right: 10px;
-      background-image: linear-gradient(to right, #f8d6cf , #f8baad);
+      background-image: linear-gradient(to right, #f8d6cf , #dca59a);
       transform: rotate(45deg);
     }
 }
 
-// .home-latest-carousel {
-//   width: 65vw;
-//   background-color: white;
-//   height: 45vh;
-//   margin: 0 auto;
-//   border-radius: 10px;
-// }
+// trending section
+////////////////////////////////
+.trending-container {
+  margin: 100px auto;
+  width: 65vw;
+  display: grid;
+  place-items: center;
+}
+
+.trending-title {
+  font-family: 'Asap Condensed', sans-serif;
+  color: white;
+  font-size: 68px;
+}
+
+.trending-title-p {
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 30px;
+  color: #cecece;
+}
+
+// trending img grid
+////////////////
+
+.trending-grid-container {
+  background-color: aqua;
+  height: 80vh;
+  width: 65vw;
+  margin: 0 auto;
+  // border-radius: 10px;
+}
