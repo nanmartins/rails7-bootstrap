@@ -1,12 +1,12 @@
 
 // NAV LINKS //
 
-.nav-link-logo {
-  background-image: url("logo2.png");
-  width: 45px;
-  background-position: center;
-  background-size: cover;
-}
+// .nav-link-logo {
+//   background-image: url("logo2.png");
+//   width: 45px;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 
 .nav-logo-img {
@@ -102,16 +102,20 @@
   z-index: 10;
   border-bottom: 1px solid white;
 
-    .nav-link-logo {
-      background-image: url("logo-white.png");
-      width: 105px;
-      background-position: center;
-      background-size: contain;
-    }
+    // .nav-link-logo {
+    //   background-image: url("logo-white.png");
+    //   width: 105px;
+    //   background-position: center;
+    //   background-size: contain;
+    // }
 
     .nav-logo-img {
-      background-image: url("logo-white.png");
-      width: 80px;
+      // background-image: url("logo-white.png");
+      // width: 80px;
+      background-color: #efefef40;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.885), rgba(255, 255, 255, 0));
+      border-radius: 3px;
+
     }
 
 
