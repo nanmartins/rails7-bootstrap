@@ -110,3 +110,29 @@ body, ul, li, dl, ol, html {
   background-size: contain;
   // border: 2px solid black;
 }
+
+////////////////////////////////
+// footer banner
+
+.footer-img-banner {
+  // background-image: url("footer-img.jpg");
+  background-image: url("footer-img.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+// .footer-banner-img {
+//   width: 100vw;
+// }
+
+.footer-banner-text {
+  color: white;
+  font-size: 32px;
+  margin: auto;
+  height: auto;
+  justify-content: flex-start;
+}
