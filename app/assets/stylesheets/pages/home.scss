@@ -58,7 +58,7 @@ body, ul, li, dl, ol, html {
     }
 }
 
-// trending section
+// trending title
 ////////////////////////////////
 .trending-container {
   margin: 100px auto 10px auto;
@@ -81,11 +81,32 @@ body, ul, li, dl, ol, html {
 
 // trending img grid
 ////////////////
+.trending-img-div1 { grid-area: img1; }
+.trending-img-div2 { grid-area: img2; }
+.trending-img-div3 { grid-area: img3; }
+.trending-img-div4 { grid-area: img4; }
+.trending-img-div5 { grid-area: img5; }
+.trending-img-div6 { grid-area: img6; }
+
 
 .trending-grid-container {
-  background-color: aqua;
-  height: 80vh;
-  width: 65vw;
-  margin: 0 auto;
-  // border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    'img1 img2 img3'
+    'img4 img5 img6';
+  place-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+// .trending-grid-container > div {
+//   width: 21vw;
+// }
+
+.trending-grid-imgs {
+  width: 21vw;
+  height: 700px;
+  background-position: center;
+  background-size: contain;
+  // border: 2px solid black;
 }
