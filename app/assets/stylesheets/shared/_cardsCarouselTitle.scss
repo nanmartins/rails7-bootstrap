@@ -1,0 +1,46 @@
+
+.home-second-body-title {
+  margin: 0 auto;
+  width: 65vw;
+  // background-color: aquamarine;
+  justify-content: flex-start;
+}
+
+.home-latest-title {
+  font-family: 'Tourney', cursive;
+  font-size: 136px;
+  line-height: 8rem;
+  // color: #bdbdbd;
+  color: white;
+  // text-shadow: 2px 2px white;
+  font-weight: 300;
+  margin: 0 20px;
+
+    &::after {
+      content: ' ';
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      margin: 0 0 10px 10px;
+      background-image: linear-gradient(to right, #f8d6cf , #dca59a);
+      transform: rotate(45deg);
+    }
+}
+
+.home-latest-paragraph {
+  font-size: 22px;
+  // color: white;
+  color: #cecece;
+  margin-left: 5px;
+  // text-shadow: 1px 1px white;
+
+    &::before {
+      content: ' ';
+      height: 15px;
+      width: 15px;
+      display: inline-block;
+      margin-right: 10px;
+      background-image: linear-gradient(to right, #f8d6cf , #dca59a);
+      transform: rotate(45deg);
+    }
+}
