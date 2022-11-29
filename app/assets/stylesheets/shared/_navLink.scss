@@ -80,7 +80,7 @@
 }
 
 .js-navShow {
-  background-color: #EFEFEF;
+  background-color: white;
   display: flex;
   position: fixed;
   width: 100vw;
@@ -88,7 +88,7 @@
   padding: 10px 10px 5px 10px;
   justify-content: space-between;
   z-index: 10;
-  border-bottom: 2px solid #c58e8483;
+  border-bottom: 1px solid #EFEFEF;
 }
 
 .js-navRose {
@@ -100,7 +100,7 @@
   padding: 10px 10px 5px 10px;
   justify-content: space-between;
   z-index: 10;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.402);
 
     // .nav-link-logo {
     //   background-image: url("logo-white.png");

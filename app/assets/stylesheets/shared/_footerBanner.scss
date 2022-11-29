@@ -22,8 +22,8 @@
 .footer-text-div {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   // align-items: flex-end;
   // min-height: 700px;
   // height: 700px;
