@@ -1,148 +1,107 @@
+<%# PRODUCT CARD %>
 
-<ul>
-  <div class="card">
-    <% @products[1..3].each do |product| %>
-      <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%">
-      <h1><%= product.name %></h1>
-        <p class="price">R$<%= product.price %></p>
-        <p><%= product.description %></p>
-        <%= link_to "View more", "/products/#{product.id}" %>
-        <p><button link_to>Add to Cart</button></p>
-    <% end %>
-  </div>
-</ul>
-
-
-  <%# ADD .EACH FOR PRODUCT %>
-  <%# <% @products.each do |product| %>
-    <%# <li><%= product.address</li> %>
-    <%# <td><% if policy(product).show? %>
-              <%# <%= link_to "Show", product_path(product) %>
-        <%# <% end</td>  %>
-    <%# <td><% if policy(product).update? %>
-              <%# <%= link_to "Edit", edit_product_path(product) %>
-        <%# <% end</td> %>
-    <%# <td><% if policy(product).update? %>
-              <%# <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%# <% end</td> %>
-  <%# <% end %>
+<div class="product-show-full-container">
+  <section class="grid-slide">
+    <div class="thumb-img-slide">
+      <ul class="thumb-slide-horizontal js-slide">
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1591567462127-1f25099900ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=833&q=80">
+        </li>
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1538651954807-323f3c1c1123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=826&q=80">
+        </li>
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1594940071661-8b6acdb9eebf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80">
+        </li>
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1519167130418-c3640bd21b7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+        </li>
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1577210897949-1f56f943bf82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+        </li>
+        <li class="thumb-img-box">
+          <img class="thumb-small-img" src="https://images.unsplash.com/photo-1649326858339-a5b9dc560a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80">
+        </li>
+      </ul>
+    </div>
 
 
+    <div class="main-img-slide js-main-img">
+      <div class="slide-div active">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1591567462127-1f25099900ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=833&q=80">
+      </div>
+      <div class="slide-div">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1538651954807-323f3c1c1123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=826&q=80">
+      </div>
+      <div class="slide-div">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1594940071661-8b6acdb9eebf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80">
+      </div>
+      <div class="slide-div">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1519167130418-c3640bd21b7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+      </div>
+      <div class="slide-div">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1577210897949-1f56f943bf82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+      </div>
+      <div class="slide-div">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1649326858339-a5b9dc560a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80">
+      </div>
+    </div>
 
+    <div class="card info">
+      <div class="shoeName">
+        <div>
+          <h1 class="big"><%= @product.name %></h1>
+          <span class="new">Novidade</span>
+        </div>
+          <h3 class="small">Product "headline"</h3>
+        </div>
+        <div class="description">
+          <h3 class="title">Descrição do produto</h3>
+          <p class="text">
+            <%= @product.description %>
+          </p>
+        </div>
+        <div class="color-container">
+          <h3 class="title">Cores disponíveis</h3>
 
-<!DOCTYPE html>
-<html>
-<style>
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
+          <div class="colors">
 
-.show {
-  display: block;
-}
+            <% @product.color = "blue green red orange black" %>
+            <% @product.color.split.each do |color| %>
+              <span class="color" primary=<%= color %> color=<%= color %>></span>
+            <% end %>
 
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
+            <span class="color active" primary="#2175f5" color="<%= @product.color %>"></span>
+            <%# <span class="color" primary="#f84848" color="red"></span> %>
+            <%# <span class="color" primary="#29b864" color="green"></span> %>
+            <%# <span class="color" primary="#ff5521" color="orange"></span> %>
+            <%# <span class="color" primary="#444" color="black"></span> %>
+          </div>
+        </div>
+        <div class="size-container">
+          <h3 class="title">Tamanhos disponíveis</h3>
+          <div class="sizes">
+            <% @product.size = "m p g 43 15" %>
+            <% @product.size.split.each do |size| %>
+              <span class="size"><%= size %></span>
+            <% end %>
+          </div>
+        </div>
+        <div class="buy-price">
+                <a href="https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, gostaria de mais informações sobre o #{@product.name}. Ele ainda está disponível?" class="buy">
+                  <span class="priceBtn"></span>
+                  </i>
+                  Comprar
+                </a>
+          <div class="price">
+            <h1>
+            <i class="fas fa-real-sign"></i>
+              R$<%= @product.price %>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
-<body>
-
-<h2>Filter DIV Elements</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+  </section>
 </div>
-
-<div class="container">
-  <div class="filterDiv cars">BMW</div>
-  <div class="filterDiv colors fruits">Orange</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars animals">Mustang</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
-</div>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-
-</body>
-</html>

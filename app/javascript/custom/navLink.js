@@ -30,4 +30,3 @@ function initNavShow() {
 }
 
 window.addEventListener('scroll', initNavShow);
-initNavShow()
