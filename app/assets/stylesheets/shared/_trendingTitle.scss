@@ -1,0 +1,20 @@
+// trending title
+////////////////////////////////
+.trending-title-container {
+  margin: 100px auto 10px auto;
+  width: 65vw;
+  display: grid;
+  place-items: center;
+}
+
+.trending-title {
+  font-family: 'Asap Condensed', sans-serif;
+  color: white;
+  font-size: 68px;
+}
+
+.trending-title-p {
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 30px;
+  color: #cecece;
+}

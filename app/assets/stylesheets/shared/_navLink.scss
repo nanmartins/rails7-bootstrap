@@ -1,12 +1,12 @@
 
 // NAV LINKS //
 
-.nav-link-logo {
-  background-image: url("logo2.png");
-  width: 45px;
-  background-position: center;
-  background-size: cover;
-}
+// .nav-link-logo {
+//   background-image: url("logo2.png");
+//   width: 45px;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 
 .nav-logo-img {
@@ -80,7 +80,7 @@
 }
 
 .js-navShow {
-  background-color: #EFEFEF;
+  background-color: white;
   display: flex;
   position: fixed;
   width: 100vw;
@@ -88,7 +88,7 @@
   padding: 10px 10px 5px 10px;
   justify-content: space-between;
   z-index: 10;
-  border-bottom: 2px solid #c58e8483;
+  border-bottom: 1px solid #EFEFEF;
 }
 
 .js-navRose {
@@ -100,18 +100,22 @@
   padding: 10px 10px 5px 10px;
   justify-content: space-between;
   z-index: 10;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.402);
 
-    .nav-link-logo {
-      background-image: url("logo-white.png");
-      width: 105px;
-      background-position: center;
-      background-size: contain;
-    }
+    // .nav-link-logo {
+    //   background-image: url("logo-white.png");
+    //   width: 105px;
+    //   background-position: center;
+    //   background-size: contain;
+    // }
 
     .nav-logo-img {
-      background-image: url("logo-white.png");
-      width: 80px;
+      // background-image: url("logo-white.png");
+      // width: 80px;
+      background-color: #efefef40;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.885), rgba(255, 255, 255, 0));
+      border-radius: 3px;
+
     }
 
 
@@ -144,6 +148,66 @@
 
         &:hover {
           color: #7c7c7c;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+    }
+}
+
+// navlink footer
+
+.js-navWhite {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding: 10px 10px 5px 10px;
+  justify-content: space-between;
+  z-index: 10;
+  border-bottom: 1px solid #EFEFEF;
+
+    .nav-cartbag-img {
+      width: 70px;
+      opacity: 0.67;
+      margin-right: 10px;
+
+        &:hover {
+          opacity: 1;
+        }
+    }
+
+    .nav-each-link {
+      font-family: 'Metropolis-semi-bold', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 1.4px;
+      margin: 10px 20px;
+      color: #989c9e;
+      text-decoration: none;
+      align-items: center;
+      display: inline-block;
+      position: relative;
+
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: -1px;
+          color: #C58E84;
+          background-color: #C58E84;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        &:hover {
+          color: #C58E84;
         }
 
         &:hover::after {

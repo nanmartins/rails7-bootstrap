@@ -1,0 +1,40 @@
+////////////////////////////////
+// footer banner
+
+.footer-img-banner {
+  // background-image: url("footer-img.jpg");
+  background-image: url("footer-img.jpg");
+  // width: 100vw;
+  background-size: cover;
+  // background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 600px;
+  // display: block;
+
+}
+
+// .footer-banner-img {
+//   width: 100vw;
+// }
+
+.footer-text-div {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  // align-items: flex-end;
+  // min-height: 700px;
+  // height: 700px;
+  // width: 100vw;
+}
+
+.footer-banner-text {
+  font-family: 'Asap Condensed', sans-serif;
+  color: white;
+  text-shadow: 2px 2px #f8d6cf;
+  font-size: 42px;
+  // text-align: end;
+  // height: 600px;
+}
