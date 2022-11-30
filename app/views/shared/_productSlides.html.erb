@@ -70,7 +70,7 @@
             <% @product.color.split.each do |color| %>
               <span class="color" primary=<%= color %> color=<%= color %>></span>
             <% end %>
-
+            
             <span class="color active" primary="#2175f5" color="<%= @product.color %>"></span>
             <%# <span class="color" primary="#f84848" color="red"></span> %>
             <%# <span class="color" primary="#29b864" color="green"></span> %>
@@ -88,12 +88,7 @@
           </div>
         </div>
         <div class="buy-price">
-                <a href="https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, gostaria de mais informações sobre o #{@product.name}. Ele ainda está disponível?" class="buy">
-                  <span class="priceBtn"></span>
-                  </i>
-                  Comprar
-                </a>
-                <%= link_to "Comprar", "https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, gostaria de mais informações sobre o #{@product.name}. Ele ainda está disponível?", class:"fas fa-shopping-cart priceBtn a", target:"_blank"%>
+            <%= link_to "Comprar", "https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, gostaria de mais informações sobre o #{@product.name}. Ele ainda está disponível?", class:"fas fa-shopping-cart priceBtn a", target:"_blank"%>
           <div class="price">
             <h1>
             <i class="fas fa-real-sign"></i>
