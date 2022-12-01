@@ -2,7 +2,7 @@
 
 <ul>
   <div class="card">
-    <% @products[1..3].each do |product| %>
+    <% @products[0..1].each do |product| %>
       <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%">
       <h1><%= product.name %></h1>
         <p class="price">R$<%= product.price %></p>
