@@ -2,7 +2,10 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    # @categories = @products.category_id
+    @colors_available = @products.map {|product| product.color}.uniq
+    @sizes_available = @products.map {|product| product.size}.uniq
+    @categories_available = @products.map {|product| product.category.category_name }.uniq
+    @prices_available = @products.map {|product| product.price}.uniq
   end
 
   def show
@@ -10,7 +13,7 @@ class ProductsController < ApplicationController
   end
 
   # def products_params
-    # params.require(:products).permit(:name, :price, :image, :size, :color, :description, :category_id)
+  #   params.require(:products).permit(:name, :price, :image, :size, :color, :description, :category_id)
   # end
 
 end
