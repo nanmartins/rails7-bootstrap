@@ -1,5 +1,13 @@
 class ProductsController < ApplicationController
 
+  def method_name
+
+  end
+
+  def create
+
+  end
+
   def index
     @products = Product.all
     @colors_available = @products.map {|product| product.color}.uniq
