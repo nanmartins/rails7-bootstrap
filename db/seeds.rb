@@ -10,17 +10,16 @@ category = 1
 example = 1
 
 5.times do
-  Category.create(category_name: "Category #{category}")
 
   5.times do
     Product.create(
-        category_id: category,
         name: "Name #{example}",
         price: example,
         image: "image #{example}",
         size: "size #{example}",
         color: "blue green red orange black",
-        description: "description #{example}"
+        description: "description #{example}",
+        category: "Category #{category}"
       )
     example += 1
   end

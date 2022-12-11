@@ -1,4 +1,15 @@
 
+ <%= simple_form_for Product.new do |p| %>
+    <%= p.input :name, label:"name" %>
+    <%= p.input :category, label:"category" %>
+    <%= p.input :price, label:"price" %>
+    <%= p.input :image, label:"image" %>
+    <%= p.input :size, label:"size" %>
+    <%= p.input :color, label:"color" %>
+    <%= p.input :description, label:"description" %>
+
+    <%= p.button :submit, 'Adicionar produto ao estoque',class:"btn btn-outline-success" %>
+  <% end %>
 
 <%= render 'shared/homeCarousel' %>
 
