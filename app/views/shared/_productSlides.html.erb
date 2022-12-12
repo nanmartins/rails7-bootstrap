@@ -66,11 +66,11 @@
 
           <div class="colors">
 
-            <% @product.color = "blue green red orange black" %>
             <% @product.color.split.each do |color| %>
-              <span class="color" primary=<%= color %> color=<%= color %>></span>
+              <span class="color" primary=<%= color %> style="background-color:<%= color %>;border-color:<%= color %>" ></span>
             <% end %>
-            
+
+
             <span class="color active" primary="#2175f5" color="<%= @product.color %>"></span>
             <%# <span class="color" primary="#f84848" color="red"></span> %>
             <%# <span class="color" primary="#29b864" color="green"></span> %>
@@ -81,7 +81,6 @@
         <div class="size-container">
           <h3 class="title">Tamanhos disponíveis</h3>
           <div class="sizes">
-            <% @product.size = "m p g 43 15" %>
             <% @product.size.split.each do |size| %>
               <span class="size"><%= size %></span>
             <% end %>
