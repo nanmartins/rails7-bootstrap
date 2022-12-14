@@ -1,11 +1,13 @@
- <%= simple_form_for Product.new do |p| %>
-    <%= p.input :name, label:"name" %>
-    <%= p.input :category, label:"category" %>
-    <%= p.input :price, label:"price" %>
-    <%= p.input :image, label:"image" %>
-    <%= p.input :size, label:"size" %>
-    <%= p.color_field :color, label:"color" %>
-    <%= p.input :description, label:"description" %>
+ <%= simple_form_for Product.new do |f| %>
+    <%= f.input :name, label:"name" %>
+    <%= f.input :category, label:"category" %>
+    <%= f.input :price, label:"price" %>
+    <%= f.input :image, label:"image" %>
+    <%= f.color_field :color, label:"color", multiple: true %>
+    <%= f.input :size, label:"size", collection: 28..47, prompt: "Select the size", selected: 29  %>
+    <%= f.input :size, label:"size" %>
+    <%= f.input :size, label:"size", as: :radio_buttons, collection: [['0', 'female'], ['1', 'male']], label_method: :second, value_method: :first, multiple:true %>
+    <%= f.input :description, label:"description" %>
 
-    <%= p.button :submit, 'Adicionar produto ao estoque',class:"btn btn-outline-success" %>
+    <%= f.button :submit, 'Adicionar produto ao estoque',class:"btn btn-outline-success" %>
   <% end %>

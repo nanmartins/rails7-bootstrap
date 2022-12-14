@@ -69,6 +69,7 @@
             <% @product.color.split.each do |color| %>
               <span class="color" primary=<%= color %> style="background-color:<%= color %>;border-color:<%= color %>" ></span>
             <% end %>
+            <% raise %>
 
 
             <span class="color active" primary="#2175f5" color="<%= @product.color %>"></span>

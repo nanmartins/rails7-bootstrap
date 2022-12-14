@@ -5,57 +5,7 @@ class AddColumnsToProduct < ActiveRecord::Migration[7.0]
     add_column :products, :price, :float
     add_column :products, :image, :string
     add_column :products, :color, :string
-    add_column :products, :color2, :string
-    add_column :products, :color3, :string
-    add_column :products, :color4, :string
-    add_column :products, :color5, :string
-    add_column :products, :color6, :string
-    add_column :products, :color7, :string
-    add_column :products, :color8, :string
-    add_column :products, :color9, :string
-    add_column :products, :color10, :string
-    add_column :products, :color11, :string
-    add_column :products, :color12, :string
-    add_column :products, :color13, :string
-    add_column :products, :color14, :string
-    add_column :products, :color15, :string
-    add_column :products, :color16, :string
-    add_column :products, :color17, :string
-    add_column :products, :color18, :string
-    add_column :products, :color19, :string
-    add_column :products, :color20, :string
-    add_column :products, :color21, :string
-    add_column :products, :color22, :string
-    add_column :products, :color23, :string
-    add_column :products, :color24, :string
-    add_column :products, :color25, :string
-    add_column :products, :color26, :string
     add_column :products, :size, :string
-    add_column :products, :size2, :string
-    add_column :products, :size3, :string
-    add_column :products, :size4, :string
-    add_column :products, :size5, :string
-    add_column :products, :size6, :string
-    add_column :products, :size7, :string
-    add_column :products, :size8, :string
-    add_column :products, :size9, :string
-    add_column :products, :size10, :string
-    add_column :products, :size11, :string
-    add_column :products, :size12, :string
-    add_column :products, :size13, :string
-    add_column :products, :size14, :string
-    add_column :products, :size15, :string
-    add_column :products, :size16, :string
-    add_column :products, :size17, :string
-    add_column :products, :size18, :string
-    add_column :products, :size19, :string
-    add_column :products, :size20, :string
-    add_column :products, :size21, :string
-    add_column :products, :size22, :string
-    add_column :products, :size23, :string
-    add_column :products, :size24, :string
-    add_column :products, :size25, :string
-    add_column :products, :size26, :string
     add_column :products, :description, :string
   end
 end
